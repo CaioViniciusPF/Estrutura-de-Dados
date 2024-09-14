@@ -80,8 +80,8 @@ void remover (int c){
             } else {
                 anterior->prox = inicio->prox; // Remove nó intermediário ou final
             }
-            delete inicio; // Libera a memória do nó removido
-            --n; // Decrementa o número de elementos
+            delete inicio;  // Libera a memória do nó removido
+            --n;            // Decrementa o número de elementos
 
             // Contrai a tabela se estiver 1/4 preenchida
             if (n > 0 && n == (m / 4)) {
